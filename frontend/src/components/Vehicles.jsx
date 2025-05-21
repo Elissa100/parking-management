@@ -73,7 +73,7 @@ function Vehicles() {
             </div>
           </form>
           <div className="alert alert-info">
-            After checking out, wait for staff approval. Once approved, pay at the exit gate and leave.
+            After checking out, wait for staff approval. you pay 5 dollars per hour and you should not exceed 10 hours in the parking, Once approved, pay at the exit gate and leave.
           </div>
         </>
       )}

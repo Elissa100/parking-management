@@ -5,6 +5,8 @@ const authRoutes = require('./routes/auth');
 const vehicleRoutes = require('./routes/vehicles');
 const approvalRoutes = require('./routes/approvals');
 const userRoutes = require('./routes/users');
+const morgan = require('morgan');
+
 require('dotenv').config();
 
 const app = express();
@@ -12,6 +14,8 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
+//use morgan for logging requests
+app.use(morgan('dev'));
 
 // Routes
 app.use('/auth', authRoutes);
